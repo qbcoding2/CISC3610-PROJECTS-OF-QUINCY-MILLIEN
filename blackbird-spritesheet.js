@@ -1,13 +1,13 @@
 "use strict";
 
-let Scene = {
+var Scene = {
     canvas: undefined,
     canvasContext: undefined,
     sprite: undefined,
 };
 
-let counterStart = 0;
-let counterStop = 0;
+var counterStart = 0;
+var counterStop = 0;
 
 Scene.start = function() {
     Scene.canvas = document.getElementById("myCanvas");
