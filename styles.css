@@ -3,13 +3,13 @@ body {
 }
 
 canvas {
-    width: 700px;
-    height: 500px;
+    width: 1000px;
+    height: 900px;
     border: 1px solid #000;
    
     background: url(./sisybgImage.jpg); 
    
-    background-size: 255px 172px;
+    background-size: 800px 700px;
 }
 
 
