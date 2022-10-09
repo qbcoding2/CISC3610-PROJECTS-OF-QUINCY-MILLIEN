@@ -64,11 +64,8 @@ Scene.draw = function () {
     while (counterStart > 300 || counterStop < 300) {
         counterStart = 0;
         Scene.canvasContext.clearRect(0, 200, Scene.canvas.width, Scene.canvas.height);
-        Scene.canvasContext.font = "35px Arial";
-        
-        // edit this
-        Scene.canvasContext.fillText("It's so hot!", 305, 240);    
-        Scene.canvasContext.fillText("Hi Birdie!", 735, 245);
+        Scene.canvasContext.font = "30px Arial";
+        Scene.canvasContext.fillText("Ugh, I hate this!", 205, 240);    
 
         counterStop++;
     }
