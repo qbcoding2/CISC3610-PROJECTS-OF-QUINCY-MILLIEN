@@ -176,7 +176,7 @@ blackbird = {
 	"meta": {
 		"app": "http://www.codeandweb.com/texturepacker",
 		"version": "1.0",
-		"image": "spritesheet.png",
+		"image": "blackbird-spitesheet.png",
 		"format": "RGBA8888",
 		"size": {
 			"w": 3006,
