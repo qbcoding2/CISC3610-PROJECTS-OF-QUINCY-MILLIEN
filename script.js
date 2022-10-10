@@ -26,6 +26,9 @@ Scene.start = function() {
 
 document.addEventListener('DOMContentLoaded', Scene.start);
 
+Scene.clearCanvas = function(){
+    
+}
 
 Scene.mainLoop = function() {
     Scene.clearCanvas();
