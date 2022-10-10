@@ -5,7 +5,7 @@ blackbird = {
 	offset: 0,
 		"frames": [
 			{
-				"filename": "01.gif",
+				"filename": "01.png",
 				"frame": {
 					"x": 1,
 					"y": 1,
@@ -26,7 +26,7 @@ blackbird = {
 				}
 			},
 			{
-				"filename": "02.gif",
+				"filename": "02.png",
 				"frame": {
 					"x": 483,
 					"y": 1,
@@ -47,7 +47,7 @@ blackbird = {
 				}
 			},
 			{
-				"filename": "03.gif",
+				"filename": "03.png",
 				"frame": {
 					"x": 1,
 					"y": 467,
