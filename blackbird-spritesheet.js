@@ -3,8 +3,9 @@ blackbird = {
 	img: undefined,
 	frame: 0,
 	offset: 0,
-	"frames": {
-		"01.png": {
+	"frames": [
+        {
+		"filename" : "01.png", 
 			"frame": {
 				"x": 1,
 				"y": 1,
@@ -24,7 +25,8 @@ blackbird = {
 				"h": 1000
 			}
 		},
-		"02.png": {
+        {
+		"filename" : "02.png", 
 			"frame": {
 				"x": 1003,
 				"y": 1,
@@ -44,7 +46,8 @@ blackbird = {
 				"h": 1000
 			}
 		},
-		"03.png": {
+        {
+		"filename" : "03.png", 
 			"frame": {
 				"x": 1,
 				"y": 1003,
@@ -64,7 +67,8 @@ blackbird = {
 				"h": 1000
 			}
 		},
-		"04.png": {
+        {
+		"filename" : "04.png",
 			"frame": {
 				"x": 1003,
 				"y": 1003,
@@ -84,7 +88,8 @@ blackbird = {
 				"h": 1000
 			}
 		},
-		"05.png": {
+        {
+		"filename" : "05.png",
 			"frame": {
 				"x": 2005,
 				"y": 1,
@@ -104,7 +109,8 @@ blackbird = {
 				"h": 1000
 			}
 		},
-		"06.png": {
+        {
+		"filename" : "06.png",
 			"frame": {
 				"x": 2005,
 				"y": 1003,
@@ -124,7 +130,8 @@ blackbird = {
 				"h": 1000
 			}
 		},
-		"07.png": {
+        {
+		"filename" : "07.png",
 			"frame": {
 				"x": 1,
 				"y": 2005,
@@ -144,7 +151,8 @@ blackbird = {
 				"h": 1000
 			}
 		},
-		"08.png": {
+        {
+		"filename" : "08.png",
 			"frame": {
 				"x": 1003,
 				"y": 2005,
@@ -163,8 +171,8 @@ blackbird = {
 				"w": 1000,
 				"h": 1000
 			}
-		}
-	},
+	    }
+    ],
 	"meta": {
 		"app": "http://www.codeandweb.com/texturepacker",
 		"version": "1.0",
