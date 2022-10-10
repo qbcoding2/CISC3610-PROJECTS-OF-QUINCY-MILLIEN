@@ -66,9 +66,7 @@ Scene.draw = function () {
         Scene.canvasContext.clearRect(0, 200, Scene.canvas.width, Scene.canvas.height);
         Scene.canvasContext.font = "30px Arial";
         Scene.canvasContext.fillText("Ugh, I hate this!", 205, 240);    
-
         counterStop++;
     }
-    counterStop = 0;
-    
+    counterStop = 0; 
 };
