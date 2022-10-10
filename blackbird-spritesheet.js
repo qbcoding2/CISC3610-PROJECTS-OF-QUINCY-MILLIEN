@@ -1,5 +1,5 @@
 blackbird = {
-	src: "blackbird-spitesheet.png",
+	src: "blackbird-spritesheet.png",
 	img: undefined,
 	frame: 0,
 	offset: 0,
@@ -176,7 +176,7 @@ blackbird = {
 	"meta": {
 		"app": "http://www.codeandweb.com/texturepacker",
 		"version": "1.0",
-		"image": "blackbird-spitesheet.png",
+		"image": "blackbird-spritesheet.png",
 		"format": "RGBA8888",
 		"size": {
 			"w": 3006,
