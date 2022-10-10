@@ -3,310 +3,176 @@ blackbird = {
 	img: undefined,
 	frame: 0,
 	offset: 0,
-	"frames": [
-		{
-			"filename": "01.png",
+	"frames": {
+		"01.png": {
 			"frame": {
 				"x": 1,
 				"y": 1,
-				"w": 163,
-				"h": 149
+				"w": 1000,
+				"h": 1000
 			},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {
 				"x": 0,
 				"y": 0,
-				"w": 163,
-				"h": 149
+				"w": 1000,
+				"h": 1000
 			},
 			"sourceSize": {
-				"w": 163,
-				"h": 149
+				"w": 1000,
+				"h": 1000
 			}
 		},
-		{
-			"filename": "02.png",
+		"02.png": {
 			"frame": {
-				"x": 166,
+				"x": 1003,
 				"y": 1,
-				"w": 180,
-				"h": 150
+				"w": 1000,
+				"h": 1000
 			},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {
 				"x": 0,
 				"y": 0,
-				"w": 180,
-				"h": 150
+				"w": 1000,
+				"h": 1000
 			},
 			"sourceSize": {
-				"w": 180,
-				"h": 150
+				"w": 1000,
+				"h": 1000
 			}
 		},
-		{
-			"filename": "03.png",
-			"frame": {
-				"x": 348,
-				"y": 1,
-				"w": 192,
-				"h": 149
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 192,
-				"h": 149
-			},
-			"sourceSize": {
-				"w": 192,
-				"h": 149
-			}
-		},
-		{
-			"filename": "04.png",
-			"frame": {
-				"x": 348,
-				"y": 152,
-				"w": 192,
-				"h": 149
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 192,
-				"h": 149
-			},
-			"sourceSize": {
-				"w": 192,
-				"h": 149
-			}
-		},
-		{
-			"filename": "05.png",
+		"03.png": {
 			"frame": {
 				"x": 1,
-				"y": 303,
-				"w": 192,
-				"h": 149
+				"y": 1003,
+				"w": 1000,
+				"h": 1000
 			},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {
 				"x": 0,
 				"y": 0,
-				"w": 192,
-				"h": 149
+				"w": 1000,
+				"h": 1000
 			},
 			"sourceSize": {
-				"w": 192,
-				"h": 149
+				"w": 1000,
+				"h": 1000
 			}
 		},
-		{
-			"filename": "06.png",
+		"04.png": {
 			"frame": {
-				"x": 195,
-				"y": 303,
-				"w": 179,
-				"h": 145
+				"x": 1003,
+				"y": 1003,
+				"w": 1000,
+				"h": 1000
 			},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {
 				"x": 0,
 				"y": 0,
-				"w": 179,
-				"h": 145
+				"w": 1000,
+				"h": 1000
 			},
 			"sourceSize": {
-				"w": 179,
-				"h": 145
+				"w": 1000,
+				"h": 1000
 			}
 		},
-		{
-			"filename": "07.png",
+		"05.png": {
 			"frame": {
-				"x": 376,
-				"y": 303,
-				"w": 181,
-				"h": 145
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 181,
-				"h": 145
-			},
-			"sourceSize": {
-				"w": 181,
-				"h": 145
-			}
-		},
-		{
-			"filename": "08.png",
-			"frame": {
-				"x": 195,
-				"y": 450,
-				"w": 181,
-				"h": 145
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 181,
-				"h": 145
-			},
-			"sourceSize": {
-				"w": 181,
-				"h": 145
-			}
-		},
-		{
-			"filename": "09.png",
-			"frame": {
-				"x": 378,
-				"y": 450,
-				"w": 181,
-				"h": 145
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 181,
-				"h": 145
-			},
-			"sourceSize": {
-				"w": 181,
-				"h": 145
-			}
-		},
-		{
-			"filename": "10.png",
-			"frame": {
-				"x": 542,
+				"x": 2005,
 				"y": 1,
-				"w": 181,
-				"h": 145
+				"w": 1000,
+				"h": 1000
 			},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {
 				"x": 0,
 				"y": 0,
-				"w": 181,
-				"h": 145
+				"w": 1000,
+				"h": 1000
 			},
 			"sourceSize": {
-				"w": 181,
-				"h": 145
+				"w": 1000,
+				"h": 1000
 			}
 		},
-		{
-			"filename": "11.png",
+		"06.png": {
 			"frame": {
-				"x": 542,
-				"y": 148,
-				"w": 151,
-				"h": 149
+				"x": 2005,
+				"y": 1003,
+				"w": 1000,
+				"h": 1000
 			},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {
 				"x": 0,
 				"y": 0,
-				"w": 151,
-				"h": 149
+				"w": 1000,
+				"h": 1000
 			},
 			"sourceSize": {
-				"w": 151,
-				"h": 149
+				"w": 1000,
+				"h": 1000
 			}
 		},
-		{
-			"filename": "12.png",
-			"frame": {
-				"x": 559,
-				"y": 299,
-				"w": 188,
-				"h": 149
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 188,
-				"h": 149
-			},
-			"sourceSize": {
-				"w": 188,
-				"h": 149
-			}
-		},
-		{
-			"filename": "13.png",
-			"frame": {
-				"x": 561,
-				"y": 450,
-				"w": 183,
-				"h": 149
-			},
-			"rotated": false,
-			"trimmed": false,
-			"spriteSourceSize": {
-				"x": 0,
-				"y": 0,
-				"w": 183,
-				"h": 149
-			},
-			"sourceSize": {
-				"w": 183,
-				"h": 149
-			}
-		},
-		{
-			"filename": "14.png",
+		"07.png": {
 			"frame": {
 				"x": 1,
-				"y": 601,
-				"w": 195,
-				"h": 149
+				"y": 2005,
+				"w": 1000,
+				"h": 1000
 			},
 			"rotated": false,
 			"trimmed": false,
 			"spriteSourceSize": {
 				"x": 0,
 				"y": 0,
-				"w": 195,
-				"h": 149
+				"w": 1000,
+				"h": 1000
 			},
 			"sourceSize": {
-				"w": 195,
-				"h": 149
+				"w": 1000,
+				"h": 1000
+			}
+		},
+		"08.png": {
+			"frame": {
+				"x": 1003,
+				"y": 2005,
+				"w": 1000,
+				"h": 1000
+			},
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": {
+				"x": 0,
+				"y": 0,
+				"w": 1000,
+				"h": 1000
+			},
+			"sourceSize": {
+				"w": 1000,
+				"h": 1000
 			}
 		}
-	],
+	},
 	"meta": {
 		"app": "http://www.codeandweb.com/texturepacker",
 		"version": "1.0",
-		"image": "blackbird-spritesheet.png",
+		"image": "spritesheet.png",
 		"format": "RGBA8888",
 		"size": {
-			"w": 748,
-			"h": 751
+			"w": 3006,
+			"h": 3006
 		},
 		"scale": "1"
 	}
