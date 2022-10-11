@@ -1,5 +1,5 @@
 blackbird = {
-	src: "black-birdsplitsheet.png",
+	src: "blackbirdsplitsheet.png",
 	img: undefined,
 	frame: 0,
 	offset: 0,
