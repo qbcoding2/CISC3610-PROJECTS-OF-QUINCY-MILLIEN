@@ -54,7 +54,7 @@ Scene.draw = function () {
         Scene.sprite.frames[Scene.sprite.frame].frame.w, 
         Scene.sprite.frames[Scene.sprite.frame].frame.h, 
         Scene.sprite.offset,                            
-        15,                                              
+        25,                                              
         Scene.sprite.frames[Scene.sprite.frame].frame.w, 
         Scene.sprite.frames[Scene.sprite.frame].frame.h 
     ); Scene.sprite.frame++;
