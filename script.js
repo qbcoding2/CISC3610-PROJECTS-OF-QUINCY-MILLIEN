@@ -54,7 +54,7 @@ Scene.draw = function () {
         Scene.sprite.frames[Scene.sprite.frame].frame.w, 
         Scene.sprite.frames[Scene.sprite.frame].frame.h, 
         Scene.sprite.offset,                            
-        0,                                              
+        15,                                              
         Scene.sprite.frames[Scene.sprite.frame].frame.w, 
         Scene.sprite.frames[Scene.sprite.frame].frame.h 
     ); Scene.sprite.frame++;
@@ -68,7 +68,7 @@ Scene.draw = function () {
         counterStart = 0;
         Scene.canvasContext.clearRect(0, 200, Scene.canvas.width, Scene.canvas.height);
         Scene.canvasContext.font = "30px Arial";
-        Scene.canvasContext.fillText("Ugh, I hate this!", 205, 240);    
+        Scene.canvasContext.fillText("Ugh, I hate this!", 205, 240);  
         counterStop++;
     }
     counterStop = 0; 
