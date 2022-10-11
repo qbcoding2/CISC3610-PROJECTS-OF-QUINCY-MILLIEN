@@ -41,7 +41,7 @@ Scene.mainLoop = function() {
 Scene.update = function () {
   	Scene.canvas.width = window.innerWidth;
 
-  	Scene.sprite.offset += 24;
+  	Scene.sprite.offset -= 24;
 	if(Scene.sprite.offset < -Scene.sprite.frames[Scene.sprite.frame].frame.w)
  		Scene.sprite.offset=Scene.canvas.width;
 };
