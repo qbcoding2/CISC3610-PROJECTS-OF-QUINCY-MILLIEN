@@ -41,7 +41,7 @@ Scene.mainLoop = function() {
 Scene.update = function () {
   	Scene.canvas.width = window.innerWidth;
 
-  	Scene.sprite.offset -= 24;
+  	Scene.sprite.offset += 24;
 	if(Scene.sprite.offset < -Scene.sprite.frames[Scene.sprite.frame].frame.w)
  		Scene.sprite.offset=Scene.canvas.width;
 };
@@ -54,9 +54,9 @@ Scene.draw = function () {
         Scene.sprite.frames[Scene.sprite.frame].frame.w, 
         Scene.sprite.frames[Scene.sprite.frame].frame.h, 
         Scene.sprite.offset,                            
-        25,                                              
+        - 100,                                              
         Scene.sprite.frames[Scene.sprite.frame].frame.w, 
-        Scene.sprite.frames[Scene.sprite.frame].frame.h 
+        Scene.sprite.frames[Scene.sprite.frame].frame.h - 150
     ); Scene.sprite.frame++;
 
 	if(Scene.sprite.frame==Scene.sprite.frames.length)
@@ -68,7 +68,7 @@ Scene.draw = function () {
         counterStart = 0;
         Scene.canvasContext.clearRect(0, 200, Scene.canvas.width, Scene.canvas.height);
         Scene.canvasContext.font = "30px Arial";
-        Scene.canvasContext.fillText("Ugh, I hate this!", 205, 240);  
+        Scene.canvasContext.fillText("Ugh, I hate this!", 205, 240); 
         counterStop++;
     }
     counterStop = 0; 
