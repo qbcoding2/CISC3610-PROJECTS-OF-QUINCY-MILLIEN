@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cartoon</title>
+<script> type="application/javascript"; language="javascript";
+
+window.onload = draw;
+
+function draw(){
+var canvas = document.getElementById("canvas1");
+var ctx = canvas.getContext("2d");
+ 
+var cloudPosition = 0;
+  for (let i = 0; i < 2; i++) {
+        drawCloud(ctx, cloudPosition);
+        cloudPosition += 400;
+    }
+
+//cloud
+function drawCloud(ctx, cloudPosition) {
+    ctx.beginPath();
+    ctx.arc(100 + cloudPosition, 95, 30, Math.PI * 0.5, Math.PI * 1.5);
+    ctx.arc(150 + cloudPosition, 65, 40, Math.PI * 1, Math.PI * 1.85);
+    ctx.arc(220 + cloudPosition, 80, 50, Math.PI * 1.37, Math.PI * 1.91);
+    ctx.arc(260 + cloudPosition, 95, 35, Math.PI * 1.5, Math.PI * 0.5);
+    ctx.closePath();
+    ctx.fillStyle = "#9FA5AC";
+    ctx.fill();
+}
+
+// sun
+const sun = new Path2D();
+  sun.arc(550, 105, 80, 0, 2 * Math.PI);
+  ctx.fillStyle = "yellow"
+  ctx.fill(sun);
+
+  var UFOPosition = 0;
+  for (let i = 0; i < 1; i++) {
+        drawSpaceship(ctx, UFOPosition);
+        UFOPosition += 20;
+  } 
+// spaceship
+function drawSpaceship(ctx) {
+    // body
+    ctx.save();
+    ctx.translate(280, 250);
+    ctx.scale(2, 1);
+    ctx.beginPath();
+    ctx.arc(0, 0, 40, 0, 2 * Math.PI, false);
+    ctx.restore();
+    ctx.fillStyle = '#354C7D';
+    ctx.fill();
+    ctx.closePath();
+
+    // top
+    ctx.beginPath();
+    ctx.arc(280, 240, 50, 0, Math.PI, true);
+    ctx.fillStyle = "#151D30";
+    ctx.fill();
+    ctx.closePath();
+
+    // light
+    ctx.fillStyle="#7BA7E0";
+    ctx.beginPath();
+    ctx.moveTo(250,290);
+    ctx.lineTo(200,440);
+    ctx.lineTo(350,440);
+    ctx.lineTo(300,290);
+
+    ctx.closePath();
+    ctx.fill();
+}
+
+drawGround(ctx); 
+
+function drawGround(ctx) {
+    ctx.fillStyle = "#6f4e37";
+    ctx.fillRect(0, canvas.height - 225, canvas.width, 200);
+}
+
+// grass
+  var grassPosition = 0;
+  for (let i = 0; i < 40; i++) {
+        drawGrass(ctx, grassPosition);
+        grassPosition += 20;
+  }    
+
+  function drawGrass(ctx, grassPosition) {
+    ctx.beginPath();
+    ctx.fillStyle = "#3cb043";
+    ctx.moveTo(0 + grassPosition, 450);
+    ctx.lineTo(30 + grassPosition, 450);
+    ctx.lineTo(25 + grassPosition, 415); // grass angled for 'wind' effect
+    ctx.lineTo(0 + grassPosition, 450);
+    ctx.fill();
+    ctx.closePath();
+  }
+
+  ctx.fillStyle = "#000000"
+    ctx.font = "20px Times New Roman";
+    ctx.fillText("UFO is going to land! (0_0)", 15, 20);
+}
+</script>
+</head>
+<body <div style="background:#3A3D42;"> </div>> 
+   
+<canvas id= "canvas1" width="650" height= "675"></canvas>
+
+</body>
+</html>
