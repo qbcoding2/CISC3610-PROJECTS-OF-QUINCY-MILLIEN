@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Text Form</title>
 </head>
 <body>
     <form>
+        <p> Please enter your name:</p>
         <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname" value=""><br>
         <label for="lname">Last name:</label><br>
         <input type="text" id="lname" name="lname" value=""><br><br>
        
+        <p> Change background color here:</p>
         <input type="color" id="bgColor" value="#ffffff">
-       
+
+        <p> Change font color here:</p>
         <input type="color" id="fontColor" value="##090a0a"> 
 
+        <p></p>
         <label for="font"> Choose a fontsize </label>
         <input
             type="range"
@@ -26,15 +30,19 @@
             step= "1"
             value= "12" >
         <p></p>
-            <input type="radio" id="Times New Roman" name="fontType" value="Times New Roman">
+            <input type="radio" id="fontType" name="fontfamily" value="Times New Roman">
             <label for="Times New Roman">Times New Roman (serif)</label><br>
-            <input type="radio" id="Courier New" name="fontType" value="Courier New">
+            <input type="radio" id="fontType" name="fontfamily" value="Courier">
             <label for="Courier New">Courier New (monospace)</label><br>
-            <input type="radio" id="Brush Script MT" name="fontType" value="Brush Script MT">
+            <input type="radio" id="fontType" name="fontfamily" value="Brush Script MT">
             <label for="Brush Script MT">Brush Script MT (cursize)</label>
 
-        <p id="text">Dummy Text</p>
-    
+            <p></p>
+            <p> TEST: (below)</p>
+            <p id="text">Dummy Text</p>
+
+            <p> Messed up?? What to start over...click the button below</p>
+        <input type="reset" value="Reset" style="font-size: 14px; background-color: white;">
     </form> 
 
     <script>
@@ -42,12 +50,14 @@
         const bgColorBox = document.getElementById("bgColor");
         const fontColorBox = document.getElementById("fontColor");
         fontSize.oninput = changeFontSize;
+        const fontStyle = document.getElementById("fontType");
         const text = document.getElementById("text");
     
         // Call functions when input value is changed
         bgColorBox.addEventListener('input', changeBgColor);
         fontColorBox.addEventListener('input', changeFontColor);
         fontSize.addEventListener('input', changeFontSize);
+        fontStyle.addEventListener('input', changeFont);
     
         function changeBgColor() {
           let bgColor = bgColorBox.value;
@@ -60,9 +70,15 @@
         }
 
         function changeFontSize() {
-            text.style.fontSize = this.value + "px";
+          text.style.fontSize = this.value + "px";
         }
 
+        function changeFont() {
+          let fontType = fontStyle.value;
+          text.style.fontFamily = fontType;
+        }
+        
       </script>  
 </body>
 </html> 
+
