@@ -14,13 +14,15 @@
         <label for="lname">Last name:</label><br>
         <input type="text" id="lname" name="lname" value=""><br><br>
        
-        <p> Change background color here:</p>
+        <p> Change background color here:
         <input type="color" id="bgColor" value="#ffffff">
+        </p>
 
-        <p> Change font color here:</p>
+        <p> Change font color here:
         <input type="color" id="fontColor" value="##090a0a"> 
+        </p>
 
-        <p></p>
+        <p>
         <label for="font"> Choose a fontsize </label>
         <input
             type="range"
@@ -29,20 +31,24 @@
             max= "48"
             step= "1"
             value= "12" >
-        <p></p>
-            <input type="radio" id="fontType" name="fontfamily" value="Times New Roman">
-            <label for="Times New Roman">Times New Roman (serif)</label><br>
-            <input type="radio" id="fontType" name="fontfamily" value="Courier">
-            <label for="Courier New">Courier New (monospace)</label><br>
-            <input type="radio" id="fontType" name="fontfamily" value="Brush Script MT">
-            <label for="Brush Script MT">Brush Script MT (cursize)</label>
+        </p>
 
-            <p></p>
-            <p> TEST: (below)</p>
+        <p>
+        <input type="radio" class="fontType" name="fontfamily" value="Times New Roman" onclick="changeFont()">
+        <label for="Times New Roman">Times New Roman (serif)</label><br>
+        <input type="radio" class="fontType" name="fontfamily" value="Courier" onclick="changeFont()">
+        <label for="Courier New">Courier New (monospace)</label><br>
+        <input type="radio" class="fontType" name="fontfamily" value="Brush Script MT" onclick="changeFont()">
+        <label for="Brush Script MT">Brush Script MT (cursize)</label>
+        </p>
+
+        <p>
+         TEST: (below)
+        </p>
             <p id="text">Dummy Text</p>
 
             <p> Messed up?? What to start over...click the button below</p>
-        <input type="reset" value="Reset" style="font-size: 14px; background-color: white;">
+            <button type="reset">Reset</button>
     </form> 
 
     <script>
@@ -50,7 +56,6 @@
         const bgColorBox = document.getElementById("bgColor");
         const fontColorBox = document.getElementById("fontColor");
         fontSize.oninput = changeFontSize;
-        const fontStyle = document.getElementById("fontType");
         const text = document.getElementById("text");
     
         // Call functions when input value is changed
@@ -74,7 +79,7 @@
         }
 
         function changeFont() {
-          let fontType = fontStyle.value;
+          let fontType = document.querySelector('input[name="fontfamily"]:checked').value;
           text.style.fontFamily = fontType;
         }
         
