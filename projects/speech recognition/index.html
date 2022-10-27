@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Speech Recognition</title>
+</head>
+<body>
+    <h1>Speech Recognition</h1>
+    <div class="gridContainer">
+        <ol id="instructionGroup">
+            <li id="instruction">Say the name of the fruit/vegetable you see in the screen in Spanish</li>
+            <li id="instruction">Say "Help" to hear the instructions.</li>
+        </ol>
+        
+        <ul id="objectGroup">
+            <li id="object">Apple</li>
+            <li id="object">Carrot</li>
+            <li id="object">Mango</li>
+            <li id="object">Peach</li>
+            <li id="object">Grapes</li>
+            <li id="object">Pineapple</li>
+        </ul>
+         <button id="speakButton" type="button" onclick="speakMessage();">Speak</button>  
+         <br>
+    </div>
+
+    <img id="manzana" src="./images/apple.jpg" alt="Apple">
+    <img id="zanahoria" src="./images/carrot.jpg" alt="Carrot">
+    <img id="mango" src="./images/mango.jpg" alt="Mango">
+    <img id="melocotón" src="./images/peach.jpg" alt="Peach">
+    <img id="uvas" src="./images/graphes.jpg" alt="Grapes">
+    <img id="piña" src="./images/pineapple.jpg" alt="Pineapple">
+
+    <canvas id="myCanvas"></canvas>
+
+    <script src="./script.js"></script>
+</body>
+</html>
