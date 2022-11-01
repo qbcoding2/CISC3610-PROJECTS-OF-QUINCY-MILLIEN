@@ -3,7 +3,7 @@ body{
     background-color: antiquewhite;
 }
 
-.grifContainer{
+.gridContainer{
     display: grid;
     grid-template-columns: auto auto auto;
 }

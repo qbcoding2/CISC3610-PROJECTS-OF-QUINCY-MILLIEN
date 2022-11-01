@@ -1,0 +1,24 @@
+h1 {
+    text-align: center;
+}
+.container {
+    text-align: center;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+}
+
+.naturesound {
+    display: inline-flex;
+    height: 700px;
+    width: 300px;
+}
+
+@media only screen and (max-width: 900px) {
+    .naturesound {
+        height: 450px;
+        width: 150px;
+    }
+}

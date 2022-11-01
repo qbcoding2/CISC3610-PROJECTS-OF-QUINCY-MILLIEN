@@ -3,10 +3,9 @@ let carrot = document.getElementById("zanahoria");
 let mango = document.getElementById("mango");
 let peach = document.getElementById("melocotón");
 let grapes = document.getElementById("uvas");
-let pineapple = doucment.getElementById("pineapple");
+let pineapple = doucment.getElementById("piña");
 
-var recognition = new (window.SpeechRecognition || window.webkitSpeechrecognition)
-
+var recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition || window.mozSpeechRecognition || window.msSpeechRecognition)();
 recognition.lang = 'es';
 recognition.interimresults = false;
 
@@ -16,8 +15,8 @@ var ctx = canvas.getContext("2d");
 const button = document.getElementById("speakButton");
 
 const speakMessage = () => {
-    if(button.innerHTML == "Speak"){
-        ctx.clearRect(0,0, canvas.clientWidth, canvas.height);
+    if(button.innerHTML === "Speak"){
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
         recognition.start();
 
         button.innerHTML = "Stop";
@@ -54,14 +53,14 @@ recognition.onresult = function(event){
 
     } 
 
-    else if (message = "help"){
-        speak("Ssay the name of the object in Spanish to see the object on the screen.")
+    else if (message == "help"){
+        speak("Say the name of the object in Spanish to see the object on the screen.")
     } else {
         ctx.font = 'bold 28px sans-serif';
-        ctx.fillText('Unknown',70,50);
+        ctx.fillText('Unknown', 70, 50);
 
         ctx.font = 'bold 12px sans-serif';
-        ctx.fillText('You said: ' +event.results[0][0].transcript, 70, 110);
+        ctx.fillText("You said: " + event.results[0][0].transcript, 70, 110);
     }
-    console.log('Ypu said: ',event.results[0][0].transcript);
+    console.log("You said: ",event.results[0][0].transcript);
 }
