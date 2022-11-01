@@ -5,12 +5,12 @@ let peach = document.getElementById("melocotón");
 let grapes = document.getElementById("uvas");
 let pineapple = doucment.getElementById("piña");
 
-var recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition || window.mozSpeechRecognition || window.msSpeechRecognition)();
+let recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition || window.mozSpeechRecognition || window.msSpeechRecognition)();
 recognition.lang = 'es';
 recognition.interimresults = false;
 
-var canvas = document.getElementById("myCanvas");
-var ctx = canvas.getContext("2d");
+let canvas = document.getElementById("myCanvas");
+let ctx = canvas.getContext("2d");
 
 const button = document.getElementById("speakButton");
 
@@ -32,7 +32,7 @@ const speak = (text) => {
 };
 
 recognition.onresult = function(event){
-    var message = event.results[0][0].transcript;
+    let message = event.results[0][0].transcript;
     if(message == "manzana"){
         ctx.drawImage(apple,0,0,300,200);
 
