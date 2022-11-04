@@ -3,7 +3,7 @@ let carrot = document.getElementById("zanahoria");
 let mango = document.getElementById("mango");
 let peach = document.getElementById("melocotón");
 let grapes = document.getElementById("uvas");
-let pineapple = doucment.getElementById("piña");
+let pineapple = document.getElementById("piña");
 
 let recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition || window.mozSpeechRecognition || window.msSpeechRecognition)();
 recognition.lang = 'es';
@@ -33,27 +33,27 @@ const speak = (text) => {
 
 recognition.onresult = function(event){
     let message = event.results[0][0].transcript;
-    if(message == "manzana"){
+    if(message === "manzana"){
         ctx.drawImage(apple,0,0,300,200);
 
-    } else if(message == "zanahoria"){
-        ctx.document(carrot,0,0,300,200);
+    } else if(message === "zanahoria"){
+        ctx.drawImage(carrot,0,0,300,200);
 
-    } else if(message == "mango"){
-        ctx.document(mango,0,0,300,200);
+    } else if(message === "mango"){
+        ctx.drawImage(mango,0,0,300,200);
 
-    } else if(message == "melocotón"){
-        ctx.document(peach,0,0,300,200);
+    } else if(message === "melocotón"){
+        ctx.drawImage(peach,0,0,300,200);
 
-    } else if(message == "uvas"){
-        ctx.document(grapes,0,0,300,200);
+    } else if(message === "uvas"){
+        ctx.drawImage(grapes,0,0,300,200);
 
-    } else if(message == "piña"){
-        ctx.document(pineapple,0,0,300,200);
+    } else if(message === "piña"){
+        ctx.drawImage(pineapple,0,0,300,200);
 
     } 
 
-    else if (message == "help"){
+    else if (message === "help"){
         speak("Say the name of the object in Spanish to see the object on the screen.")
     } else {
         ctx.font = 'bold 28px sans-serif';
