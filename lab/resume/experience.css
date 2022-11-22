@@ -1,0 +1,113 @@
+.main-timeline-4{
+    position: relative;
+}
+
+.main-timeline-4::after {
+    content:' ';
+    position: absolute;
+    width: 3px;
+    background-color: #bbb;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline-4 {
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+
+}
+
+.timeline-4::after {
+    content:' ';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -11px;
+    background-color: #bbb;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.right-4 {
+    padding: opx 40px 20px 0px;
+    left: 0;
+}
+
+.left-4::before {
+    content:' ';
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    right: 30px;
+    border: medium solid rgba(112, 124, 255, 0.77);
+    border-width: 10px 0 19px 10px;
+    border-color: transparent transparent transparent rgba(112, 124, 255, 0.77);
+}
+
+.right-4::before {
+    content:' ';
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    left: 30px;
+    border: medium solid rgba(255, 110, 214, 0.9);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgba(255, 110, 214, 0.9) transparent transparent;
+}
+
+.right-4::after {
+    left: -14px;
+}
+
+@media screen and (max-width: 600px){
+
+    .man-timeline-4::after {
+        left: 31px;
+    }
+
+    .timeline-4 {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline-4::before {
+        left: 606px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .left-4::after,
+    .right-4::after {
+        left: 18px;
+    }
+
+    .left-4::before {
+        right: auto;
+    }
+
+    .right-4{
+        left: 0%;
+    }
+}
+
+.gradient-custom {
+    background: #6a11cb;
+
+    background: -webkit-linear-gradient(to right, rbga(106, 17, 203, 1) , rgba(37. 117, 252. 1));
+
+    background-image: linear-gradient(123deg, #43CBFF 10%, #9708CC 100%);
+}
+
+.gradient-custome-4{
+    background: #f093fb;
+
+    background: -webkit-linear-gradient(to left, rgba(240, 147, 251, 1), rgba(245, 87, 108, 1));
+
+    background-image: linear-gradient(135deg, #FF6FD8 10%, #3813C2 100%);
+}
